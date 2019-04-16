@@ -1,65 +1,33 @@
-# vscode-vcard README
+# vCard
 
-This is the README for your extension "vscode-vcard". After writing up a brief description, we recommend including the following sections.
+This extension currently provides syntax highlighting for vCard files (.vcf, vcard). vCard files are used to exchange contact information as electronic business cards. More information about this file format can be found on [this wikipedia page](https://en.wikipedia.org/wiki/VCard).
+
+Future changes to this extension will include auto-complete, error checking (squiggles), quick view (on hover), and a preview window to make viewing and editing vCard files easier.
+
+***
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### Syntax Highlighting:
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+![feature Syntax Highlighting](images/syntax-highlighting.png)
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+There are no known issues at this time. This section will be updated as and when issues are discovered.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### [Unreleased]
 
-### 1.0.0
+***
 
-Initial release of ...
+## Contributing
 
-### 1.0.1
+If you have any feedback, please submit an issue at the project's [github issues page](https://github.com/cstrachan88/vscode-vcard/issues).
 
-Fixed issue #.
+Feedback is encourged, and pull requests are greatly appreciated.
 
-### 1.1.0
+## License
 
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+This project is licensed under the [MIT License](LICENSE.txt) so feel free to take a look and implement whatever is useful in your own applications.
