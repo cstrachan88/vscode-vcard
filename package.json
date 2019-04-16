@@ -1,25 +1,33 @@
 {
-    "name": "vscode-vcard",
-    "displayName": "vscode-vcard",
-    "description": "vCard Syntax Highlighting for Visual Studio Code",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.33.0"
-    },
-    "categories": [
-        "Programming Languages"
-    ],
-    "contributes": {
-        "languages": [{
-            "id": "vcf",
-            "aliases": ["vCard", "vcf"],
-            "extensions": [".vcf",".vcard"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "vcf",
-            "scopeName": "source.vcf",
-            "path": "./syntaxes/vcf.tmLanguage.json"
-        }]
+  "name": "vscode-vcard",
+  "displayName": "vscode-vcard",
+  "description": "vCard Syntax Highlighting for Visual Studio Code",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.33.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "vcf",
+      "aliases": ["vCard", "vcf"],
+      "extensions": [".vcf",".vcard"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "vcf",
+      "scopeName": "source.vcf",
+      "path": "./syntaxes/vcf.tmLanguage.json"
+    }]
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
+  }
 }
