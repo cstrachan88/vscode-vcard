@@ -2,7 +2,7 @@
   "name": "vscode-vcard",
   "displayName": "vscode-vcard",
   "description": "vCard Syntax Highlighting for Visual Studio Code",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.33.0"
   },
@@ -12,7 +12,7 @@
   "contributes": {
     "languages": [{
       "id": "vcf",
-      "aliases": ["vCard", "vcf"],
+      "aliases": ["vCard", "vcard", "vcf"],
       "extensions": [".vcf",".vcard"],
       "configuration": "./language-configuration.json"
     }],
