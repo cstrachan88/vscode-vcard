@@ -1,32 +1,65 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "vCard",
-	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
-	],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.vcf",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.vcf",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.vcf",
-					"match": "\\\\."
-				}
-			]
-		}
-	},
-	"scopeName": "source.vcf"
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "vCard",
+  "patterns": [
+    {
+      "name": "support.function",
+      "begin": "\\ABEGIN:VCARD",
+      "end": "END:VCARD\\Z",
+      "patterns": [
+        { "include": "#versionNum" },
+        { "include": "#properties" },
+        { "include": "#extensionProperties" },
+        { "include": "#attributeTypes" },
+        { "include": "#attributeValues" },
+        { "include": "#values" },
+        { "include": "#valuesMultiline" }
+      ]
+    }
+  ],
+  "repository": {
+    "versionNum": {
+      "patterns": [{
+        "name": "variable.language.version.vcf",
+        "match": "(?<=^VERSION:).+$"
+      }]
+    },
+    "properties": {
+      "patterns": [{
+        "name": "keyword.control.property.vcf",
+        "match": "^\\b(VERSION|ADR|AGENT|ANNIVERSARY|BDAY|CALADRURI|CALURI|CATEGORIES|CLASS|CLIENTPIDMAP|EMAIL|FBURL|FN|GENDER|GEO|IMPP|KEY|KIND|LABEL|LANG|LOGO|MAILER|MEMBER|N|NAME|NICKNAME|NOTE|ORG|PHOTO|PRODID|PROFILE|RELATED|REV|ROLE|SORT-STRING|SOUND|SOURCE|TEL|TITLE|TZ|UID|URL|XML)\\b"
+      }]
+    },
+    "extensionProperties": {
+      "patterns": [{
+        "name": "keyword.other.expansion.property.vcf",
+        "match": "^.+?(?=:)"
+      }]
+    },
+    "attributeTypes": {
+      "patterns": [{
+        "name": "entity.name.type.attribute.vcf",
+        "match": "(?<=;)\\b\\w+?\\b(?=[:;=])"
+      }]
+    },
+    "attributeValues": {
+      "patterns": [{
+        "name": "variable.attribute.vcf",
+        "match": "(?<=\\=).+?(?=[:;])"
+      }]
+    },
+    "values": {
+      "patterns": [{
+        "name": "string.unquoted.value.vcf",
+        "match": "(?<=:).+"
+      }]
+    },
+    "valuesMultiline": {
+      "patterns": [{
+        "name": "string.unquoted.value.vcf",
+        "match": "^ \\S.+"
+      }]
+    }
+  },
+  "scopeName": "source.vcf"
 }
