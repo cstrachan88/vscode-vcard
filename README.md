@@ -18,16 +18,20 @@ There are no known issues at this time. This section will be updated as and when
 
 ## Release Notes
 
-### [Unreleased]
+### [1.0.0] - 2019-04-18
+
+#### Added
+
+* Syntax Highlighting
 
 ***
 
 ## Contributing
 
-If you have any feedback, please submit an issue at the project's [github issues page](https://github.com/cstrachan88/vscode-vcard/issues).
+If you have any feedback, please open an issue at the project's [github issues page](https://github.com/cstrachan88/vscode-vcard/issues).
 
-Feedback is encourged, and pull requests are greatly appreciated.
+Feedback is encourged, and pull requests are welcome!
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE.txt) so feel free to take a look and implement whatever is useful in your own applications.
+This project is licensed under the [MIT License](LICENSE.txt).
