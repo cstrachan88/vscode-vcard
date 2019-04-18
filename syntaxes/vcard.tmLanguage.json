@@ -33,7 +33,7 @@
     "extensionProperties": {
       "patterns": [{
         "name": "keyword.other.expansion.property.vcard",
-        "match": "^.+?(?=:)"
+        "match": "^\\S.*?(?=:)"
       }]
     },
     "attributeTypes": {
@@ -57,7 +57,7 @@
     "valuesMultiline": {
       "patterns": [{
         "name": "string.unquoted.value.vcard",
-        "match": "^ \\S.+"
+        "match": "^ \\S.*"
       }]
     }
   },
