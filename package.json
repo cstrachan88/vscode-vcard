@@ -2,7 +2,7 @@
   "name": "vscode-vcard",
   "displayName": "vscode-vcard",
   "description": "vCard Syntax Highlighting for Visual Studio Code",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "engines": {
     "vscode": "^1.33.0"
   },
@@ -11,15 +11,15 @@
   ],
   "contributes": {
     "languages": [{
-      "id": "vcf",
+      "id": "vcard",
       "aliases": ["vCard", "vcard", "vcf"],
-      "extensions": [".vcf",".vcard"],
+      "extensions": [".vcard",".vcf"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
-      "language": "vcf",
-      "scopeName": "source.vcf",
-      "path": "./syntaxes/vcf.tmLanguage.json"
+      "language": "vcard",
+      "scopeName": "source.vcard",
+      "path": "./syntaxes/vcard.tmLanguage.json"
     }]
   },
   "devDependencies": {
