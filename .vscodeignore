@@ -1,4 +1,9 @@
-.vscode/**
-.vscode-test/**
+# Folders
+.vscode
+examples
+node_modules
+releases
+
+# Files
 .gitignore
-vsc-extension-quickstart.md
+images/vcard-icon.ai
