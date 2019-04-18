@@ -1,8 +1,24 @@
 {
-  "name": "vscode-vcard",
-  "displayName": "vscode-vcard",
+  "name": "vcard",
+  "displayName": "vCard",
   "description": "vCard Syntax Highlighting for Visual Studio Code",
-  "version": "0.3.1",
+  "publisher": "cstrachan",
+  "author": {
+    "name": "Courtney Strachan",
+    "email": "courtney.strachan@gmail.com",
+    "url": "https://strachan.dev/"
+  },
+  "license": "MIT",
+  "version": "1.0.0",
+  "private": false,
+  "icon": "images/vcard-icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cstrachan88/vscode-vcard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cstrachan88/vscode-vcard/issues"
+  },
   "engines": {
     "vscode": "^1.33.0"
   },
