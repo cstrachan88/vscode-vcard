@@ -8,7 +8,7 @@ Future changes to this extension will include auto-complete, error checking (squ
 
 ### Syntax Highlighting
 
-![feature Syntax Highlighting](images/syntax-highlighting.png)
+![feature Syntax Highlighting](images/syntax-highlighting.gif)
 
 ## Known Issues
 
@@ -16,11 +16,11 @@ There are no known issues at this time. This section will be updated as and when
 
 ## Release Notes
 
-### [1.0.0] - 2019-04-18
+### [1.0.1] - 2019-04-19
 
-#### Added
+#### Fixed
 
-* Syntax Highlighting
+* Multi-contact vCard files now has working syntax highlighting.
 
 *[Full changelog here](CHANGELOG.md)*
 

@@ -7,11 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2019-04-19
+
+### Fixed
+
+* Multi-contact vCard files now has working syntax highlighting.
+
 ## [1.0.0] - 2019-04-18
 
 ### Added
 
 * Syntax Highlighting
 
-[Unreleased]: https://github.com/cstrachan88/vscode-vcard/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/cstrachan88/vscode-vcard/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/cstrachan88/vscode-vcard/releases/tag/v1.0.1
 [1.0.0]: https://github.com/cstrachan88/vscode-vcard/releases/tag/v1.0.0
