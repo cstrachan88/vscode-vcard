@@ -1,0 +1,14 @@
+{
+  "Create vCard": {
+    "prefix": "vCard",
+    "body": [
+      "BEGIN:VCARD",
+      "VERSION:$1",
+      "N:$2;$3;$4;$5;",
+      "FN:$6",
+      "$7",
+      "END:VCARD"
+    ],
+    "description": "Create new vCard"
+  }
+}

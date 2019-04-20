@@ -9,7 +9,7 @@
     "url": "https://strachan.dev/"
   },
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "private": false,
   "icon": "images/vcard-icon.png",
   "repository": {
@@ -36,6 +36,10 @@
       "language": "vcard",
       "scopeName": "source.vcard",
       "path": "./syntaxes/vcard.tmLanguage.json"
+    }],
+    "snippets": [{
+      "language": "vcard",
+      "path": "./snippets.json"
     }]
   },
   "devDependencies": {
