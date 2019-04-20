@@ -3,9 +3,9 @@
   "name": "vCard",
   "patterns": [
     {
-      "name": "support.function",
-      "begin": "\\ABEGIN:VCARD",
-      "end": "END:VCARD\\Z",
+      "name": "support.function.vcard",
+      "begin": "^BEGIN:VCARD$",
+      "end": "^END:VCARD$",
       "patterns": [
         { "include": "#versionNum" },
         { "include": "#properties" },
